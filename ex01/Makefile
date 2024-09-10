@@ -6,11 +6,11 @@
 #    By: jcummins <jcummins@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/26 18:08:59 by jcummins          #+#    #+#              #
-#    Updated: 2024/09/10 11:13:52 by jcummins         ###   ########.fr        #
+#    Updated: 2024/09/10 14:17:53 by jcummins         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = claptrap
+NAME = serena
 
 SRC_DIR = .
 OBJ_DIR = obj
@@ -34,6 +34,7 @@ $(OBJ_DIR)/%.o:	$(SRC_DIR)/%.c $(HEADS)
 clean:
 	@echo "💥 Removing all object files"
 	@rm -rf $(OBJ_DIR)
+	@rm -rf *.dSYM/
 
 fclean: clean
 	@echo "💥 Removing all object files and executable"
