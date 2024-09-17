@@ -6,7 +6,7 @@
 /*   By: jcummins <jcummins@student.42prague.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/10 11:37:37 by jcummins          #+#    #+#             */
-/*   Updated: 2024/09/10 15:09:57 by jcummins         ###   ########.fr       */
+/*   Updated: 2024/09/17 15:01:11 by jcummins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,31 +17,31 @@
 int	main(void)
 {
 	ScavTrap	a("Simon");
-
-	a.attack("Alastair");
-	a.takeDamage(2);
-	a.beRepaired(1);
-	a.beRepaired(1);
-	a.beRepaired(1);
-	a.beRepaired(1);
-	a.beRepaired(1);
-	a.beRepaired(1);
-	a.beRepaired(1);
-	a.beRepaired(1);
-	a.beRepaired(1);
-	a.beRepaired(1);
-	a.beRepaired(1);
-	a.beRepaired(1);
-	a.beRepaired(1);
-	a.beRepaired(1);
-	a.beRepaired(1);
-	a.takeDamage(6);
-	a.takeDamage(6);
-	a.takeDamage(6);
-	a.attack("Alastair");
-	a.takeDamage(2);
-	a.beRepaired(1);
-	a.beRepaired(1);
-	a.guardGate();
+	ScavTrap	b(a);
+	b.attack("Alastair");
+	b.takeDamage(2);
+	b.beRepaired(1);
+	b.beRepaired(1);
+	b.beRepaired(1);
+	b.beRepaired(1);
+	b.beRepaired(1);
+	b.beRepaired(1);
+	b.beRepaired(1);
+	b.beRepaired(1);
+	b.beRepaired(1);
+	b.beRepaired(1);
+	b.beRepaired(1);
+	b.beRepaired(1);
+	b.beRepaired(1);
+	b.beRepaired(1);
+	b.beRepaired(1);
+	b.takeDamage(6);
+	b.takeDamage(6);
+	b.takeDamage(6);
+	b.attack("Alastair");
+	b.takeDamage(2);
+	b.beRepaired(1);
+	b.beRepaired(1);
+	b.guardGate();
 	return (0);
 }

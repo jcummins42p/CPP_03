@@ -6,7 +6,7 @@
 /*   By: jcummins <jcummins@student.42prague.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/10 14:19:54 by jcummins          #+#    #+#             */
-/*   Updated: 2024/09/17 14:15:29 by jcummins         ###   ########.fr       */
+/*   Updated: 2024/09/17 15:05:39 by jcummins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,14 @@ ScavTrap::ScavTrap( std::string name ) : ClapTrap( name )
 	_ep = 50;
 	_attack = 20;
 	std::cout << "Created a Scavtrap called " << _name << std::endl;
+}
+
+ScavTrap::ScavTrap( const ScavTrap &other ) : ClapTrap( other._name )
+{
+	_hp = other._hp;
+	_ep = other._ep;
+	_attack = other._attack;
+	std::cout << "Created a copied Scavtrap called " << _name << std::endl;
 }
 
 ScavTrap	&ScavTrap::operator=(const ScavTrap &other)

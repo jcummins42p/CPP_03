@@ -6,7 +6,7 @@
 /*   By: jcummins <jcummins@student.42prague.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/10 15:15:55 by jcummins          #+#    #+#             */
-/*   Updated: 2024/09/10 16:23:20 by jcummins         ###   ########.fr       */
+/*   Updated: 2024/09/17 15:07:06 by jcummins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 
 #include <iostream>
 #include "ClapTrap.hpp"
-#include "ScavTrap.hpp"
 
 class	FragTrap : public ClapTrap
 {
