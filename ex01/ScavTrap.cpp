@@ -6,7 +6,7 @@
 /*   By: jcummins <jcummins@student.42prague.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/10 14:19:54 by jcummins          #+#    #+#             */
-/*   Updated: 2024/09/10 15:09:32 by jcummins         ###   ########.fr       */
+/*   Updated: 2024/09/17 14:15:29 by jcummins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,7 @@ void	ScavTrap::attack(const std::string& target) {
 		return;
 	}
 	_ep--;
-	std::cout	<< _name << " attacks " << target << " for "
+	std::cout	<< _name << " attacks (scavilly) " << target << " for "
 				<< _attack << " hp of damage." << std::endl;
 }
 

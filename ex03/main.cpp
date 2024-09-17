@@ -6,7 +6,7 @@
 /*   By: jcummins <jcummins@student.42prague.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/10 11:37:37 by jcummins          #+#    #+#             */
-/*   Updated: 2024/09/16 15:42:06 by jcummins         ###   ########.fr       */
+/*   Updated: 2024/09/16 17:15:43 by jcummins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,26 +59,27 @@ void	testFragTrap()
 void	testDiamondTrap(DiamondTrap *test)
 {
 	DiamondTrap	*diamond = new DiamondTrap(*test);
-
-	diamond->takeDamage(80);
-	diamond->beRepaired(1);
-	for (int i = 0; i < 11; i++)
-		diamond->attack("Keith");
-	diamond->beRepaired(1);
-	diamond->highFivesGuys();
-	diamond->guardGate();
-	diamond->whoAmI();
+	DiamondTrap	noptr(*test);
 
 	delete diamond;
+
+	noptr.takeDamage(80);
+	noptr.beRepaired(1);
+	for (int i = 0; i < 11; i++)
+		noptr.attack("Keith");
+	noptr.beRepaired(1);
+	noptr.highFivesGuys();
+	noptr.guardGate();
+	noptr.whoAmI();
 }
 
 int	main(void)
 {
 	DiamondTrap *test = new DiamondTrap("Danny");
 
-	testClapTrap();
-	testScavTrap();
-	testFragTrap();
+	//testClapTrap();
+	//testScavTrap();
+	//testFragTrap();
 	testDiamondTrap(test);
 
 	delete test;
